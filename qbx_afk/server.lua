@@ -5,14 +5,14 @@ local checkUser = {}
 local previousPos = {}
 local time = {}
 local timeMinutes = {
-    [900] = 'minutes',
-    [600] = 'minutes',
-    [300] = 'minutes',
-    [150] = 'minutes',
-    [60] = 'minutes',
-    [30] = 'seconds',
-    [20] = 'seconds',
-    [10] = 'seconds'
+    [900] = 'minutos',
+    [600] = 'minutos',
+    [300] = 'minutos',
+    [150] = 'minutos',
+    [60] = 'minutos',
+    [30] = 'segundos',
+    [20] = 'segundos',
+    [10] = 'segundos'
 }
 
 local function updateCheckUser(source)
@@ -68,14 +68,14 @@ CreateThread(function()
                 if previousPos[v] and currentPos == previousPos[v] then
                     if time[v] > 0 then
                         local _type = timeMinutes[time[v]]
-                        if _type == 'minutes' then
-                            exports.qbx_core:Notify(v, 'You are AFK and will be kicked in ' .. math.ceil(time[v] / 60) .. ' minute(s)!', 'error', 10000)
-                        elseif _type == 'seconds' then
-                            exports.qbx_core:Notify(v, 'You are AFK and will be kicked in ' .. time[v] .. ' seconds!', 'error', 10000)
+                        if _type == 'minutos' then
+                            exports.qbx_core:Notify(v, 'Estás AFK y serás expulsado en ' .. math.ceil(time[v] / 60) .. ' minuto(s).', 'error', 10000)
+                        elseif _type == 'segundos' then
+                            exports.qbx_core:Notify(v, 'Estás AFK y serás expulsado en ' .. time[v] .. ' segundos.', 'error', 10000)
                         end
                         time[v] -= 1
                     else
-                        DropPlayer(v --[[@as string]], 'You have been kicked for being AFK')
+                        DropPlayer(v --[[@as string]], 'Te han expulsado por estar AFK.')
                     end
                 else
                     time[v] = config.timeUntilAFKKick

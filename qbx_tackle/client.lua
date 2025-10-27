@@ -1,6 +1,6 @@
 lib.addKeybind({
     name = 'tackle',
-    description = 'Tackle',
+    description = 'Placaje',
     defaultKey = 'E',
     onReleased = function(self)
         if cache.vehicle then return end

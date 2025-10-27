@@ -152,7 +152,7 @@ end
 
 keybind = lib.addKeybind({
     name = 'elevator_interact',
-    description = 'Interact with an elevator',
+    description = 'Interactuar con un ascensor',
     defaultKey = 'E',
     secondaryMapper = 'PAD_DIGITALBUTTONANY',
     secondaryKey = 'RRIGHT_INDEX',

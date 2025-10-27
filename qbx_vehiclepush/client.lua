@@ -175,7 +175,7 @@ end)
 
 lib.addKeybind({
     name = 'push_vehicle_e',
-    description = 'first keybind to push vehicle',
+    description = 'Primera tecla para empujar el vehículo',
     defaultKey = 'E',
     onPressed = function()
         pressed.e = true
@@ -190,7 +190,7 @@ lib.addKeybind({
 
 lib.addKeybind({
     name = 'push_vehicle',
-    description = 'second keybind to push vehicle',
+    description = 'Segunda tecla para empujar el vehículo',
     defaultKey = 'LSHIFT',
     onPressed = function(self)
         pressed.shift = true
