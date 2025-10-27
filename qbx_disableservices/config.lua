@@ -8,7 +8,7 @@ return {
         [5] = false,    -- AmbulanceDepartment
         [6] = false,    -- PoliceRiders
         [7] = false,    -- PoliceVehicleRequest
-        [8] = true,     -- PoliceRoadBlock
+        [8] = false,     -- PoliceRoadBlock
         [9] = false,    -- PoliceAutomobileWaitPulledOver
         [10] = false,   -- PoliceAutomobileWaitCruising
         [11] = false,   -- Gangs
